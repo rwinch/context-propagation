@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Usage Examples :: Micrometer Context Propagation</title>
+    <title>Examples :: Micrometer Context Propagation</title>
     <link rel="prev" href="purpose.html">
     <meta name="generator" content="Antora 3.2.0-alpha.2">
     <script>
@@ -288,7 +288,7 @@
     <a class="nav-link" href="purpose.html">Purpose</a>
   </li>
   <li class="nav-item is-current-page" data-depth="1">
-    <a class="nav-link" href="usage.html">Usage Examples</a>
+    <a class="nav-link" href="usage.html">Examples</a>
   </li>
 </ul>
   </li>
@@ -329,7 +329,7 @@
   <div class="content">
     <div
       class="toc"
-      data-title="Usage Examples"
+      data-title="Examples"
       data-levels="2"
     >
       <div class="toc-menu"></div>
@@ -373,15 +373,15 @@
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="index.html">Micrometer Context Propagation</a></li>
-    <li><a href="usage.html">Usage Examples</a></li>
+    <li><a href="usage.html">Examples</a></li>
   </ul>
 </nav>
 <article>
-<h1 id="page-title" class="page">Usage Examples</h1>
+<h1 id="page-title" class="page">Examples</h1>
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Below you will find a list of examples of using the Context Propagation library.</p>
+<p>The examples in this section use the Context Propagation library.</p>
 </div>
 </div>
 </div>
@@ -389,7 +389,7 @@
 <h2 id="context-propagation-usage-examples-thread-local"><a class="anchor" href="#context-propagation-usage-examples-thread-local"></a><code>ThreadLocal</code> Population</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Below you can find a holder for <code>ThreadLocal</code> values.</p>
+<p>The following example shows a holder for <code>ThreadLocal</code> values.</p>
 </div>
 <div class="listingblock">
 <div class="title">ObservationThreadLocalHolder</div>
@@ -417,7 +417,7 @@ public class ObservationThreadLocalHolder {
 </div>
 </div>
 <div class="paragraph">
-<p>Below you can find a <code>ThreadLocalAccessor</code> that interacts with the holder.</p>
+<p>The following example shows a <code>ThreadLocalAccessor</code> that interacts with the holder.</p>
 </div>
 <div class="listingblock">
 <div class="title">ObservationThreadLocalAccessor</div>
@@ -453,7 +453,7 @@ public class ObservationThreadLocalAccessor implements ThreadLocalAccessor&lt;St
 </div>
 </div>
 <div class="paragraph">
-<p>Below you can find an example of how to store and restore thread local values via <code>ThreadLocalAccessor</code>, <code>ContextSnapshot</code> and <code>ContextRegistry</code>.</p>
+<p>The following example shows one way to store and restore thread local values by using <code>ThreadLocalAccessor</code>, <code>ContextSnapshot</code>, and <code>ContextRegistry</code>.</p>
 </div>
 <div class="listingblock">
 <div class="content">
