@@ -27,6 +27,9 @@ buildscript {
 	configurations.classpath.resolutionStrategy.cacheDynamicVersionsFor 0, 'minutes'
 }
 
+def mainGitWorktree = new File('git rev-parse --path-format=absolute --git-common-dir'.execute().text).parentFile.absolutePath
+ext['git.root'] = mainGitWorktree
+
 // TODO: remove this hack, see: https://github.com/nebula-plugins/nebula-release-plugin/issues/213
 def releaseStage = findProperty('release.stage')
 apply plugin: 'nebula.release'
