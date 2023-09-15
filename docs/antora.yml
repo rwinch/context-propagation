@@ -6,8 +6,7 @@ nav:
 ext:
   collector:
     run:
-      command: ./gradlew -q -PbuildSrc.skipTests=true "-Dorg.gradle.jvmargs=-Xmx3g -XX:+HeapDumpOnOutOfMemoryError" :docs:generateAntoraResources
-      local: true
+      command: git --no-pager log --git-dir /home/rwinch/.cache/antora/content/context-propagation-f1fc516668d27ffc501ddd5989977f06b8ffb8c6.git
     scan:
       dir: ./build/generated-antora-resources
 
