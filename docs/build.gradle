@@ -59,6 +59,10 @@ tasks.named('generateAntoraYml') {
 
 tasks.create('generateAntoraResources') {
 	dependsOn 'generateAntoraYml'
+	doFirst {
+		println '===---'
+		println findProperty('git.root')
+	}
 }
 
 tasks.named('antora') {
